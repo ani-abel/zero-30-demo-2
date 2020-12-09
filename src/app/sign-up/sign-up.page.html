@@ -1,0 +1,60 @@
+<main id="create-new-account-page" class="bg-offwhite container">
+
+  <section id="header" class="constrain">
+      <div class="navigation">
+          <a [routerLink]="['/login']" class="back">
+              <img class="svg" src="assets/images/icons/arrow-left.svg" height="5px" alt="Go back">
+          </a>
+      </div>
+  </section>
+
+  <section id="heading-text" class="constrain">
+      <h1 class="title">Create New Account</h1>
+  </section>
+
+  <section id="create-new-account-form" class="constrain">
+      <form action="login.html">
+          <div class="form-row">
+              <div>
+                  <input type="text" placeholder="Full name" name="name">
+              </div>
+          </div>
+
+          <div class="form-row">
+              <div>
+                  <input type="email" placeholder="Email" name="email">
+              </div>
+          </div>
+
+          <div class="form-row">
+              <div>
+                  <input type="password" placeholder="Password" name="password">
+              </div>
+          </div>
+
+          <div class="form-row">
+              <div>
+                  <input type="text" placeholder="Phone Number" name="phone">
+              </div>
+          </div>
+
+          <div class="form-row">
+              <div>
+                  <input type="add" placeholder="Your location" name="address">
+              </div>
+          </div>
+
+          <div class="form-row">
+              <div>
+                  <input type="date" placeholder="Date of Birth" name="date-of-birth">
+              </div>
+          </div>
+
+          <div></div>
+
+          <div class="form-row">
+              <button type="submit" class="btn btn-primary" name="submit">Continue</button>
+          </div>
+      </form>
+  </section>
+  </main>

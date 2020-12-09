@@ -1,0 +1,44 @@
+<main id="login-page" class="bg-offwhite container">
+  <section id="login-logo" class="constrain">
+    <img class="svg" src="../assets/images/logo.png" height="150px" alt="Zero30 Logo">
+</section>
+
+<section id="login-form" class="constrain">
+    <form>
+        
+        <!-- This is the error text, it displays form errors. -->
+        <p class="error">Oh no! Your account or password is incorrect, please check again.</p>
+        
+        <div class="form-row">
+            <div>
+                <input type="text" placeholder="Username" name="username">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <input type="password" placeholder="Password" name="password">
+            </div>
+        </div>
+
+        <div class="form-row reset-password-link">
+            <a [routerLink]="['/forgot-password']" class="link link-secondary">Forgot password!</a>
+        </div>
+
+        <div></div>
+
+        <div class="form-row">
+            <button type="button" (click)="navigate()" type="submit" class="btn btn-primary" name="sign-in">Sign In</button>
+        </div>
+
+        <!-- Facebook sign in button -->
+        <div class="form-row">
+            <a [routerLink]="['/sign-up']" class="btn btn-facebook">Sign In with Facebook</a>
+        </div>
+    </form>
+</section>
+
+<section id="create-account-link" class="constrain">
+    <p>You don’t have an account? <a [routerLink]="['/sign-up']" class="link link-primary">Sign up</a></p>
+</section>
+</main>

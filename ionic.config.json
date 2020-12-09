@@ -1,0 +1,7 @@
+{
+  "name": "zero-30-demo-2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
